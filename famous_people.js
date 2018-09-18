@@ -10,7 +10,6 @@ const client = new pg.Client({
   ssl      : settings.ssl
 });
 
-// var name = process.argv[2];
 
 client.connect((err) => {
   if (err) {
