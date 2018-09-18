@@ -14,8 +14,8 @@ knex('famous_people')
     first_name:`${process.argv[2]}`,
     last_name: `${process.argv[3]}`,
     birthdate: `${process.argv[4]}`,
-  }, 'first_name')
+  })
   .then( name => {
-    console.log(`Inserted ${process.argv[2]} ${process.argv[3]} into famous_people.`);
+    console.log(`Inserted '${process.argv[2]} ${process.argv[3]}' into famous_people.`);
     knex.destroy();
   });
