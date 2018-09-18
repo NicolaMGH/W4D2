@@ -29,7 +29,8 @@ client.connect((err) => {
 
     let i = 1;
     result.rows.forEach ( x => {
-      console.log(`- ${i} ${x.first_name} ${x.last_name}, born '${x.birthdate.toLocaleString().slice(0,-9)}'`);
+      const line = `- ${i} ${x.first_name} ${x.last_name}, born '${x.birthdate.toLocaleString().slice(0,-9)}'`;
+      console.log(line);
       i ++
     });
 
